@@ -13,3 +13,5 @@ Check the assumption most likely to change the decision. If the evidence contrad
 Choose a check capable of exposing the suspected error. Deliver in the requested format and language. Report material limitations and distinguish completed checks from outstanding ones.
 
 For work spanning multiple components, data sources, or irreversible effects, read the [verification guide](references/verification.md). Apply the checks relevant to the actual decision. Scale the handoff to the task: identify what was verified, the evidence, and any material gaps. For a simple edit, return the requested deliverable directly.
+
+For authorship questions, detector scores, or watermarks, consult the detection notes in the [verification guide](references/verification.md), even for a single passage.

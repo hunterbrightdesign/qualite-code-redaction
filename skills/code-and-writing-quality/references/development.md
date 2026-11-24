@@ -9,3 +9,5 @@ Trace contract changes through callers and existing data. Validate inputs at tru
 For retryable or interruptible operations, state the property the system must preserve. If two confirmations arrive concurrently for one payment, check that the ledger records one credit and the balance changes once. Exercise migrations against pre-existing records.
 
 Before destructive actions, verify the target and the authorization already granted. Test the affected behavior through its normal entry point and report what you observed.
+
+Review generated changes for logic, configuration, security, and maintainability even when the demo works. Check that a maintainer can trace the failure path. Keep responsibilities clear, reuse existing logic, and introduce a new layer only when a concrete requirement warrants it. When citing Veracode, CodeRabbit, or package-hallucination studies, identify the sample, date, unit of analysis, and limits before quoting a rate. A finding about reviewed pull requests does not estimate the defect rate of a specific application.

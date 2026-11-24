@@ -33,3 +33,11 @@ The following pages explain the phenomena behind these checks. Consult original 
 - [Vibe coding](https://en.wikipedia.org/wiki/Vibe_coding), [automation bias](https://en.wikipedia.org/wiki/Automation_bias), and [sycophancy](https://en.wikipedia.org/wiki/Sycophancy_%28artificial_intelligence%29)
 - [Editorial observations on AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 - [AI content detection](https://en.wikipedia.org/wiki/Artificial_intelligence_content_detection) and [watermarking](https://en.wikipedia.org/wiki/AI_watermarking)
+
+## Interpreting detector claims
+
+Perplexity describes how predictable a passage is to a particular language model. Burstiness refers to variation across a passage and may be operationalized differently by different tools. When discussing GPTZero or a similar detector, identify the version and documented signals if available. Compare the evaluated language, genre, text length, and editing history with the actual passage. Standardized prose and some non-native English writing can be flagged incorrectly. Avoid inferring neurodivergence or assigning a subgroup-specific error rate without data for that population.
+
+A watermark detector looks for a signal introduced during generation. Examples include token-list schemes described by Kirchenbauer and colleagues and sampling-based approaches such as SynthID-Text. For any named scheme, including textGrain, verify the original specification, detection access or key requirements, and the exact meaning of any distribution-preservation claim. A short excerpt, paraphrase, translation, or human edit may weaken the signal. Report what was measured and the uncertainty. A positive result for one passage does not establish who wrote or edited the whole document.
+
+When assessing supposed glitch tokens, record the input, model and tokenizer versions if known, and whether the behavior reproduces in an isolated example. Treat the cause as unresolved if the observations do not distinguish tokenization from an ordinary generation error.
