@@ -1,40 +1,22 @@
-# Qualité du code et de la rédaction
+# Code and Writing Quality
 
-Skill francophone pour vérifier une conception logicielle, corriger une application ou réviser un texte en préservant les faits et la voix de son auteur.
+An agent skill for checking software changes, reviewing architecture, and editing text while preserving the author's meaning and voice.
 
-## Installer dans un projet sur macOS ou Linux
+## Install
 
-1. Récupérer ce dépôt avec Git ou télécharger et extraire son archive ZIP.
-2. Ouvrir un terminal **à la racine du dépôt téléchargé**, dans le dossier qui contient ce README.
-3. Dans le bloc ci-dessous, remplacer `/chemin/vers/mon-projet` par le chemin d’un projet existant. Les guillemets permettent d’utiliser un chemin contenant des espaces.
+With Node.js 22.20 or later installed, run this command from the project where you want to use the skill:
 
 ```sh
-(
-  set -eu
-  projet="/chemin/vers/mon-projet"
-  nom="qualite-code-redaction"
-  source_skill="$(pwd)/.claude/skills/$nom"
-  test -f "$source_skill/SKILL.md"
-  cd "$projet"
-  for cible in ".claude/skills/$nom" ".agents/skills/$nom"; do
-    if [ -e "$cible" ] || [ -L "$cible" ]; then
-      echo "Installation interrompue : $cible existe déjà." >&2
-      exit 1
-    fi
-  done
-  mkdir -p .claude/skills .agents/skills
-  cp -R "$source_skill" ".claude/skills/$nom"
-  ln -s "../../.claude/skills/$nom" ".agents/skills/$nom"
-)
+npx skills add hunterbrightdesign/qualite-code-redaction
 ```
 
-Le projet dispose ainsi d’une seule copie des instructions, accessible depuis les deux répertoires de skills. Pour une installation manuelle sur un système sans liens symboliques, copier le dossier source complet `.claude/skills/qualite-code-redaction` dans chacun des répertoires `.claude/skills/` et `.agents/skills/` du projet cible.
+Select **code-and-writing-quality** and the agents you use when prompted. Open a new session in your project. To check the installation, run `npx skills list`.
 
-## Utilisation
+## Try it
 
-Ouvrir le projet cible dans une nouvelle session et sélectionner `qualite-code-redaction` dans la liste des skills. Exemples de demandes :
+- “Check whether this API response matches the fields its client reads.”
+- “Fix the spelling in this message and keep the tentative delivery date.”
 
-- « Vérifie que la réponse de cette API correspond aux champs lus par son client. »
-- « Corrige seulement les fautes de ce message en conservant le tutoiement. »
+The [skill instructions](skills/code-and-writing-quality/SKILL.md) link to the development and writing guides. The [evaluation cases](evals/cases.md) describe how to check the results.
 
-Les [cas d’essai](evals/cas.md) donnent les demandes et les critères de réussite.
+If you installed the earlier French version manually, remove its `qualite-code-redaction` entries from your project's skill directories after confirming that the English version is available.
