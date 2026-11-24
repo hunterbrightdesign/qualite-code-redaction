@@ -1,11 +1,11 @@
 ---
 name: code-and-writing-quality
-description: Diagnose and repair existing or legacy projects, review software designs and changes, write or edit text while preserving facts and voice, and check API documentation against implementation.
+description: Diagnose and repair existing or legacy projects, review software designs and changes, rewrite project Markdown (.md) and edit other text while preserving facts and voice, and check API documentation against implementation.
 ---
 Identify the requested deliverable and what the user expects to preserve. An architecture review calls for findings. A bug fix calls for a targeted change and a check of the affected behavior.
 
 - For software design, development, or review, read the [development guide](references/development.md).
-- For drafting or editing, read the [writing guide](references/writing.md).
+- For drafting or editing, including every requested Markdown (.md) rewrite in any project, read the [writing guide](references/writing.md).
 - For a mixed task, use both and compare documented examples with observed behavior.
 
 Check the assumption most likely to change the decision. If the evidence contradicts it, explain the practical consequence. State a reversible assumption when it allows progress. Ask for missing information when it determines a commitment, business rule, or irreversible action.
