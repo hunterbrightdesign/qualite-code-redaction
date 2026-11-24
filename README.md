@@ -20,3 +20,5 @@ Select **code-and-writing-quality** and the agents you use when prompted. Open a
 The [skill instructions](skills/code-and-writing-quality/SKILL.md) link to the development and writing guides. The [evaluation cases](evals/cases.md) describe how to check the results.
 
 If you installed the earlier French version manually, remove its `qualite-code-redaction` entries from your project's skill directories after confirming that the English version is available.
+
+For work spanning multiple systems or sources, the [verification guide](skills/code-and-writing-quality/references/verification.md) maps documented failure modes to checks and observable evidence.
