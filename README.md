@@ -14,6 +14,7 @@ Select **code-and-writing-quality** and the agents you use when prompted. Open a
 
 ## Try it
 
+- “Fix this bug in our existing app. Keep older records readable and verify access for both authorized and unauthorized users.”
 - “Check whether this API response matches the fields its client reads.”
 - “Fix the spelling in this message and keep the tentative delivery date.”
 

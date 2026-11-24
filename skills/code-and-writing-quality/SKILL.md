@@ -1,6 +1,6 @@
 ---
 name: code-and-writing-quality
-description: Review software designs and changes, write or edit text while preserving facts and voice, and check API documentation against implementation.
+description: Diagnose and repair existing or legacy projects, review software designs and changes, write or edit text while preserving facts and voice, and check API documentation against implementation.
 ---
 Identify the requested deliverable and what the user expects to preserve. An architecture review calls for findings. A bug fix calls for a targeted change and a check of the affected behavior.
 
